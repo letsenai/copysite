@@ -1,0 +1,300 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background-color: #dcdcdc;
+  font-size: 12px;
+}
+
+/* TOPO */
+.topbar {
+  background: linear-gradient(#e8e8e8, #d0d0d0);
+  border-bottom: 1px solid #9a9a9a;
+  padding: 6px 10px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Barra de botões */
+.toolbar {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+/* Botões estilo SAP */
+.toolbar button {
+  background-color: #f2f2f2;
+  border: 1px solid #999;
+  padding: 5px 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.toolbar button:hover {
+  background-color: #e0e0e0;
+}
+
+/* Layout geral */
+.container {
+  display: flex;
+  height: calc(100vh - 80px);
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 280px;
+  background-color: #f0f0f0;
+  border-right: 1px solid #9a9a9a;
+}
+
+/* Cabeçalho */
+.nav-header {
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.nav-header .tab {
+  margin-left: 10px;
+  color: #666;
+}
+
+/* Botões */
+button {
+  background: linear-gradient(#f8f8f8, #dcdcdc);
+  border: 1px solid #8c8c8c;
+  padding: 3px 8px;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: linear-gradient(#ffffff, #d6d6d6);
+}
+
+/* Tabela */
+.nav-table th {
+  background: linear-gradient(#e5e5e5, #cfcfcf);
+  border-bottom: 1px solid #9a9a9a;
+}
+
+.nav-table td {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Linha selecionada */
+.active {
+  background-color: #bcd6f7 !important;
+}
+
+/* Área direita */
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+}
+
+/* Placeholder da parte de cima */
+.top-placeholder {
+  height: 200px;
+  border-bottom: 2px solid #bfbfbf;
+  background-color: #ffffff;
+}
+
+/* ATTRIBUTES */
+.attributes {
+  background-color: #efefef;
+  border-top: 1px solid #9a9a9a;
+}
+
+/* Cabeçalho */
+.attr-header {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Corpo (2 colunas) */
+.attr-body {
+  display: flex;
+  gap: 900px;
+}
+
+/* Colunas */
+.form-column {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.form-row,
+.form-column1 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.form-row label {
+  width: 140px;   /* tamanho fixo */
+  font-size: 11px;
+}
+
+.form-column1 label {
+  width: 140px;   /* tamanho fixo */
+  font-size: 11px;
+}
+
+.form-row input,
+.form-row select {
+  height: 20px;
+  font-size: 11px;
+  padding: 0 4px;
+  border: 1px solid #8c8c8c;
+  box-sizing: border-box;
+}
+
+.form-row select {
+  line-height: 20px;   /* força alinhamento interno */
+}
+
+/* Labels */
+.form-column label {
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+/* Inputs e selects */
+.form-column input,
+.form-column select {
+  border: 1px solid #8c8c8c;
+  height: 20px;
+}
+
+/* OVERVIEW CONTAINER */
+.overview {
+  background-color: #ffffff;
+  border-bottom: 2px solid #bfbfbf;
+}
+
+/* ABAS */
+.overview-tabs {
+  background-color: #dcdcdc;
+  padding: 4px 5px 0;
+}
+
+.overview-tabs .tab {
+  background: linear-gradient(#e5e5e5, #cfcfcf);
+  border: 1px solid #9a9a9a;
+  border-bottom: none;
+  padding: 4px 10px;
+}
+
+.overview-tabs .active {
+  background: #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+
+/* TOOLBAR */
+.overview-toolbar {
+  background-color: #efefef;
+  border-bottom: 1px solid #9a9a9a;
+
+  display: flex;        /* ativa flex */
+  align-items: center;
+  gap: 5px;
+}
+
+.overview-toolbar .right {
+  margin-left: auto;
+}
+
+/* TABELA */
+.overview-table {
+  font-size: 10px;
+}
+
+.overview-table td {
+  padding: 1px 4px;
+  height: 18px;
+  line-height: 16px;
+}
+
+.overview-table th {
+  padding: 2px 4px;
+  height: 20px;
+  text-align: left;   /* joga pra direita */
+  font-weight: normal; /* tira o negrito */
+}
+
+/* Indentação */
+.indent {
+  padding-left: 20px;
+}
+
+/* Linha ativa */
+.overview-table .active {
+  background-color: #cfe3ff;
+}
+
+.overview {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.overview-table {
+  flex: 1;
+}
+
+.overview-table th:nth-child(1),
+.overview-table td:nth-child(1) {
+  width: 35%;
+}
+
+.overview-table th:nth-child(2),
+.overview-table td:nth-child(2) {
+  width: 20%;
+}
+
+.overview-table th:nth-child(3),
+.overview-table td:nth-child(3) {
+  width: 30%;
+}
+
+.overview-table th:nth-child(4),
+.overview-table td:nth-child(4) {
+  width: 15%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.overview {
+  flex: 2;
+}
+
+.attributes {
+  flex: 1;
+}
+
+.form-column {
+  width: 260px;
+}
+
+.form-column label {
+  font-size: 11px;
+  margin-top: 6px;
+}
+
+.form-column input,
+.form-column select {
+  height: 18px;
+  font-size: 11px;
+  padding: 2px 4px;
+}

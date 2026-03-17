@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Replica Interface</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- TOPO -->
+    <header class="topbar">
+        <div class="title">
+            Component Customizing /SCMTMS/WDCC_FWD_ORDER, Main Page
+        </div>
+
+        <div class="toolbar">
+            <button>Save</button>
+            <button>Cancel</button>
+            <button>Edit</button>
+            <button>Save Draft</button>
+            <button>Load Draft</button>
+            <button>Undo</button>
+            <button>Redo</button>
+            <button>Check</button>
+            <button>Additional Functions</button>
+        </div>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <div class="container">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <div class="nav-header">
+                <strong>Navigation</strong>
+                <span class="tab">Repositories</span>
+            </div>
+
+            <div class="nav-buttons">
+                <button>New</button>
+                <button>🗑</button>
+                <button>Up</button>
+                <button>Down</button>
+            </div>
+
+            <table class="nav-table">
+                <thead>
+                    <tr>
+                        <th>Page Type</th>
+                        <th>Page Id</th>
+                        <th>Title</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Initial Page</td>
+                        <td>INIT</td>
+                        <td>$OTR:/SCMT...</td>
+                    </tr>
+                    <tr class="active">
+                        <td>Main Page</td>
+                        <td>MAIN</td>
+                        <td>$OTR:/SCMT...</td>
+                    </tr>
+                    <tr>
+                        <td>Main Page</td>
+                        <td>MAIN_FAST_EI</td>
+                        <td>$OTR:/SCMT...</td>
+                    </tr>
+                    <tr>
+                        <td>Main Page</td>
+                        <td>MAIN_FAST_EI</td>
+                        <td>$OTR:/SCMT...</td>
+                    </tr>
+                    <tr>
+                        <td>Dialog Box</td>
+                        <td>ADDRESS_DE</td>
+                        <td>$OTR:/SCMT...</td>
+                    </tr>
+                    <tr>
+                        <td>Dialog Box</td>
+                        <td>ACT_LIST</td>
+                        <td>$OTR:/SCMT...</td>
+                    </tr>
+                    <tr>
+                        <td>Dialog Box</td>
+                        <td>NOTE_HLP</td>
+                        <td>$OTR:/BOFU...</td>
+                    </tr>
+                    <tr>
+                        <td>Dialog Box</td>
+                        <td>SEC_FILING_R</td>
+                        <td>$OTR:/SCMT...</td>
+                    </tr>
+                    <tr>
+                        <td>Dialog Box</td>
+                        <td>SEC_FILING_O</td>
+                        <td>$OTR:/SCMT...</td>
+                    </tr>
+                    <tr>
+                        <td>Dialog Box</td>
+                        <td>REPACT_NOTE</td>
+                        <td>$OTR:/SCMT...</td>
+                    </tr>
+                    <tr>
+                        <td>Dialog Box</td>
+                        <td>REPACT_ATF</td>
+                        <td>$OTR:/SCMT...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </aside>
+
+        <!-- ÁREA DIREITA (vazia por enquanto) -->
+        <main class="content">
+
+            <!-- ÁREA SUPERIOR (depois a gente faz) -->
+            <div class="overview">
+
+                <!-- ABAS -->
+                <div class="overview-tabs">
+                    <span class="tab active">Overview Page Schema</span>
+                    <span class="tab">Toolbar Schema</span>
+                    <span class="tab">Wire Schema</span>
+                </div>
+
+                <!-- BOTÕES -->
+                <div class="overview-toolbar">
+                    <button>Page Master Area</button>
+                    <button>Section</button>
+                    <button>UIBB</button>
+                    <button>🗑</button>
+                    <button>Up</button>
+                    <button>Down</button>
+                    <button class="right">Configure UIBB</button>
+                </div>
+
+                <!-- TABELA -->
+                <table class="overview-table">
+                    <thead>
+                        <tr>
+                            <th>Element</th>
+                            <th>Component</th>
+                            <th>Config ID</th>
+                            <th>Window Name</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>▶ Section: SECTION_1</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td class="indent">▸ UIBB: $OTR:/SCMTMS/UI...</td>
+                            <td>FPM_FORM_UIBB_GL2</td>
+                            <td>/SCMTMS/WDCC_FWO_GEN</td>
+                            <td>FORM_WINDOW</td>
+                        </tr>
+
+                        <tr class="active">
+                            <td class="indent">▸ UIBB: $OTR:/SCMTMS/UI...</td>
+                            <td>FPM_FORM_UIBB_GL2</td>
+                            <td>/SCMTMS/WDCC_CMN_ADMINDATA</td>
+                            <td>FORM_WINDOW</td>
+                        </tr>
+
+                        <tr>
+                            <td class="indent">▸ UIBB: $OTR:/SCMTMS/UI...</td>
+                            <td>FPM_TABBED_UIBB</td>
+                            <td>/SCMTMS/WDCC_TRQ_BUPA</td>
+                            <td>TABBED_WINDOW</td>
+                        </tr>
+
+                        <tr>
+                            <td class="indent">▸ UIBB: $OTR:/SCMTMS/UI...</td>
+                            <td>FPM_TREE_UIBB</td>
+                            <td>/SCMTMS/WDCC_DOC_FLOW</td>
+                            <td>TREE_WINDOW</td>
+                        </tr>
+
+                        <tr>
+                            <td class="indent">▸ UIBB: $OTR:/SCMTMS/UI...</td>
+                            <td>FPM_TABBED_UIBB</td>
+                            <td>/SCMTMS/WDCC_TCM_CHARGES_TA</td>
+                            <td>TABBED_WINDOW</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+            </div>
+
+            <!-- ATTRIBUTES -->
+            <div class="attributes">
+
+                <div class="attr-header">
+                    Attributes of UIBB: $OTR:/SCMTMS/UI_CMN/ADM_INFO
+                </div>
+
+                <div class="attr-body">
+
+                    <!-- COLUNA ESQUERDA -->
+                    <div class="form-column">
+
+                        <div class="form-row">
+                            <label>Window Name:</label>
+                            <input type="text" value="FORM_WINDOW">
+                        </div>
+
+                        <div class="form-row">
+                            <label>Config ID:</label>
+                            <input type="text" value="/SCMTMS/WDCC_CMN_ADMINDATA">
+                        </div>
+
+                        <div class="form-row">
+                            <label>Instance ID:</label>
+                            <input type="text">
+                        </div>
+
+                        <div class="form-row">
+                            <label>Column:</label>
+                            <input type="text" value="1">
+                        </div>
+
+                        <div class="form-row">
+                            <label>Row Number:</label>
+                            <input type="text">
+                        </div>
+
+                        <div class="form-row">
+
+                            <label>Sequence Index:</label>
+                        </div>
+
+                        <select>
+                            <option>Visible</option>
+                            <option>Hidden and Excluded from Event Loop</option>
+                            <option>Hidden but Processed in Event Loop (/technical)</option>
+                        </select>
+
+                        <div class="form-row">
+                            <label>Default:</label>
+                            <input type="text">
+                        </div>
+
+                        <div class="form-row">
+                            <label>Hidden Element</label>
+                            <input type="text" value="Visible">
+                        </div>
+
+                    </div>
+
+                    <!-- COLUNA DIREITA -->
+                    <div class="form-column">
+
+                        <div class="form-column1">
+                            <label>Title:</label>
+                            <input type="text" value="$OTR:/SCMTMS/UI_CMN/ADM_INFO">
+                        </div>
+
+                        <div class="form-column1">
+                            <label>Image:</label>
+                            <input type="text">
+                        </div>
+
+                        <div class="form-column1">
+                            <label>Padding:</label>
+
+                            <select>
+                            <option>Automatic (Default)</option>
+                        </select>
+
+                        </div>
+
+                        <div class="form-column1">
+                            <label>Style:</label>
+                            <input type="text">
+                        </div>
+
+                        <div class="form-column1">
+                            <label>Explanation Text:</label>
+                            <input type="text">
+                        </div>
+
+                        <div class="form-column1">
+                            <label>Explanation Document:</label>
+                            <input type="text">
+                        </div>
+
+                        <div class="form-column1">
+                            <label>Default Edit Page:</label>
+                            <input type="text">
+                        </div>
+
+                        <div class="form-column1">
+                            <label>Default Details Page:</label>
+                            <input type="text">
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>
