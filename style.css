@@ -17,14 +17,13 @@ body {
   font-size: 14px;
 }
 
-/* Barra de botões */
+/* BARRA COM BOTOES */
 .toolbar {
   display: flex;
   gap: 6px;
   flex-wrap: wrap;
 }
 
-/* Botões estilo SAP */
 .toolbar button {
   background-color: #f2f2f2;
   border: 1px solid #999;
@@ -37,7 +36,7 @@ body {
   background-color: #e0e0e0;
 }
 
-/* Layout geral */
+/* LAYOUT */
 .container {
   display: flex;
   height: calc(100vh - 80px);
@@ -50,7 +49,7 @@ body {
   border-right: 1px solid #9a9a9a;
 }
 
-/* Cabeçalho */
+/* CABEÇALHO */
 .nav-header {
   padding: 8px;
   border-bottom: 1px solid #ccc;
@@ -62,7 +61,7 @@ body {
   color: #666;
 }
 
-/* Botões */
+/* BOTOES */
 button {
   background: linear-gradient(#f8f8f8, #dcdcdc);
   border: 1px solid #8c8c8c;
@@ -75,34 +74,51 @@ button:hover {
   background: linear-gradient(#ffffff, #d6d6d6);
 }
 
-/* Tabela */
+/* AJUSTE NAVIGATION*/
+.nav-table {
+  width: 100%;
+  height: calc(100% - 80px); 
+  display: block;
+  overflow-y: auto;
+  border-collapse: collapse;
+}
+
+.nav-table thead {
+  display: table;
+  width: 100%;
+}
+
+.nav-table tbody {
+  display: table;
+  width: 100%;
+}
+
+/* CABEÇALHO DA TABALA */
 .nav-table th {
   background: linear-gradient(#e5e5e5, #cfcfcf);
   border-bottom: 1px solid #9a9a9a;
+  font-weight: normal;
+  text-align: left;
+  padding: 2px 4px;
 }
 
+/* LINHAS */
 .nav-table td {
   border-bottom: 1px solid #e0e0e0;
+  padding: 2px 4px;
 }
 
-/* Linha selecionada */
+/* LINHA AZUL */
 .active {
   background-color: #bcd6f7 !important;
 }
 
-/* Área direita */
+/* AREA DIREITA */
 .content {
   flex: 1;
   display: flex;
   flex-direction: column;
   background-color: #f5f5f5;
-}
-
-/* Placeholder da parte de cima */
-.top-placeholder {
-  height: 200px;
-  border-bottom: 2px solid #bfbfbf;
-  background-color: #ffffff;
 }
 
 /* ATTRIBUTES */
@@ -111,19 +127,19 @@ button:hover {
   border-top: 1px solid #9a9a9a;
 }
 
-/* Cabeçalho */
+/* CABEÇALJO */
 .attr-header {
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-/* Corpo (2 colunas) */
+/* BODY */
 .attr-body {
   display: flex;
   gap: 900px;
 }
 
-/* Colunas */
+/* COLUNAS */
 .form-column {
   display: flex;
   flex-direction: column;
@@ -137,13 +153,9 @@ button:hover {
   margin-bottom: 4px;
 }
 
-.form-row label {
-  width: 140px;   /* tamanho fixo */
-  font-size: 11px;
-}
-
+.form-row label,
 .form-column1 label {
-  width: 140px;   /* tamanho fixo */
+  width: 140px;
   font-size: 11px;
 }
 
@@ -156,30 +168,15 @@ button:hover {
   box-sizing: border-box;
 }
 
-.form-row select {
-  line-height: 20px;   /* força alinhamento interno */
-}
-
-/* Labels */
-.form-column label {
-  font-size: 12px;
-  margin-top: 8px;
-}
-
-/* Inputs e selects */
-.form-column input,
-.form-column select {
-  border: 1px solid #8c8c8c;
-  height: 20px;
-}
-
-/* OVERVIEW CONTAINER */
+/* OVERVIEW */
 .overview {
   background-color: #ffffff;
   border-bottom: 2px solid #bfbfbf;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
 }
 
-/* ABAS */
 .overview-tabs {
   background-color: #dcdcdc;
   padding: 4px 5px 0;
@@ -197,12 +194,10 @@ button:hover {
   border-bottom: 1px solid #ffffff;
 }
 
-/* TOOLBAR */
 .overview-toolbar {
   background-color: #efefef;
   border-bottom: 1px solid #9a9a9a;
-
-  display: flex;        /* ativa flex */
+  display: flex;
   align-items: center;
   gap: 5px;
 }
@@ -211,90 +206,35 @@ button:hover {
   margin-left: auto;
 }
 
-/* TABELA */
 .overview-table {
   font-size: 10px;
+  flex: 1;
 }
 
 .overview-table td {
   padding: 1px 4px;
   height: 18px;
-  line-height: 16px;
 }
 
 .overview-table th {
   padding: 2px 4px;
-  height: 20px;
-  text-align: left;   /* joga pra direita */
-  font-weight: normal; /* tira o negrito */
+  text-align: left;
+  font-weight: normal;
 }
 
-/* Indentação */
 .indent {
   padding-left: 20px;
 }
 
-/* Linha ativa */
 .overview-table .active {
   background-color: #cfe3ff;
 }
 
-.overview {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-.overview-table {
-  flex: 1;
-}
-
-.overview-table th:nth-child(1),
-.overview-table td:nth-child(1) {
-  width: 35%;
-}
-
-.overview-table th:nth-child(2),
-.overview-table td:nth-child(2) {
-  width: 20%;
-}
-
-.overview-table th:nth-child(3),
-.overview-table td:nth-child(3) {
-  width: 30%;
-}
-
-.overview-table th:nth-child(4),
-.overview-table td:nth-child(4) {
-  width: 15%;
-}
-
+/* AJUSTE LAYOUT*/
 .content {
-  display: flex;
-  flex-direction: column;
   height: 100%;
-}
-
-.overview {
-  flex: 2;
 }
 
 .attributes {
   flex: 1;
-}
-
-.form-column {
-  width: 260px;
-}
-
-.form-column label {
-  font-size: 11px;
-  margin-top: 6px;
-}
-
-.form-column input,
-.form-column select {
-  height: 18px;
-  font-size: 11px;
-  padding: 2px 4px;
 }
